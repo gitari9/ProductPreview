@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+.child1 {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+.child2 {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+}
+.container  {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);    
+}
+.content {
+    display: flex;
+}
+.perfumeimg  {
+    width: 340px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.description  {
+    width: 30ch;
+    color: hsl(228, 12%, 48%);
+}
+.headerSm {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 10px;
+    font-size: 14px;
+}
+.header  {
+    width: 12ch;
+    font-family: 'Fraunces', serif;
+}
+.details  {
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 24px;
+}
+.prices {
+    display: flex;
+    align-items: center;
+}
+.newPrice {
+    color: hsl(158, 36%, 37%);
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 10px;
+    font-family: 'Fraunces', serif;
+}
+.oldPrice {
+    color: hsl(228, 12%, 48%);
+text-decoration: line-through;
+}
+.checkout {
+    
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+}
+.bgGreen {
+    background-color: hsl(158, 36%, 37%);
+    transition: 0.3s;
+}
+.bgGreen:hover {
+    background-color:hsl(212, 21%, 14%) ;
+    transition: 0.3s;
+    cursor: pointer;   
+}
+.cart {
+    margin-right: px;
+}
+@media screen and (max-width: 400px) {
+   .container {
+    display: block;
+    padding: 10px;
+   } 
+   .content { 
+     display: block; 
+     background-color: white;
+     border-radius: 10px;
+    }
+    .details {
+        padding: 0 15px 15px 15px;
+        border-radius: 10px;
+    }
+    .perfumeimg {
+        width: 100%;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .headerSm {
+        margin-top: 15px;
+        
+    }
+    .header {
+        margin-top: -25px;
+        width: unset   ;
+    
+    }
+}
